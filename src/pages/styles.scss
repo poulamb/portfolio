@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+$title-color: #da8626;
+// $info: #f8f4c8;
+$warning: #fbc801;
+$card-background-color: #fbc801;
+$dark: black;
+
+
+@import "~bulma/bulma.sass";
+
+.logo-button {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(114, 112, 112);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fbc801;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #da8626;
+}
