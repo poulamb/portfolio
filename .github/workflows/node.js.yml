@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
+    - run: sudo apt-get install yarn
+    - run: yarn install
     - run: npm install -g gatsby-cli
     - run: npm run build --if-present
