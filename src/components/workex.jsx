@@ -11,7 +11,7 @@ const Workex = () => {
                 ericsson: file(relativePath: { eq: "ericsson.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -19,7 +19,7 @@ const Workex = () => {
                 jpmc: file(relativePath: { eq: "jpmc.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -27,7 +27,7 @@ const Workex = () => {
                 tcs: file(relativePath: { eq: "tcs.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -35,7 +35,7 @@ const Workex = () => {
                 deloitte: file(relativePath: { eq: "deloitte.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -43,7 +43,7 @@ const Workex = () => {
                 sap: file(relativePath: { eq: "sap.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }

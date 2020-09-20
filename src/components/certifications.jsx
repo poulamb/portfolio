@@ -9,7 +9,7 @@ const Certifications = () => {
                 az201: file(relativePath: { eq: "az201.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -17,7 +17,7 @@ const Certifications = () => {
                 az900: file(relativePath: { eq: "az900.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -25,7 +25,7 @@ const Certifications = () => {
                 ocip: file(relativePath: { eq: "OCI_Professional.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -33,7 +33,7 @@ const Certifications = () => {
                 ocia: file(relativePath: { eq: "OCI_Associate.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }
@@ -41,7 +41,7 @@ const Certifications = () => {
                 salesforce: file(relativePath: { eq: "salesforce.png" }) {
                     childImageSharp {
                         # Specify the image processing specifications right in the query.
-                        fixed(width: 150, height: 150) {
+                        fixed(width: 150, height: 150, quality: 90) {
                             ...GatsbyImageSharpFixed
                         }
                     }

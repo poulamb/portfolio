@@ -10,7 +10,7 @@ const Intro = () => {
                 file(relativePath: { eq: "profile.jpg" }) {
                 childImageSharp {
                     # Specify the image processing specifications right in the query.
-                    fluid {
+                    fluid(maxWidth: 2048, quality: 90) {
                         ...GatsbyImageSharpFluid
                     }
                 }
